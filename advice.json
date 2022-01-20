@@ -3,7 +3,7 @@
 	"//" : "Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE)",
 	
 	"Team Agility" : {
-		"Advice" : "A great place to start is by reading the Agile Manifesto. Scrum is a popular Agile software development framework which is a great approach when setting up a new team if there isn't already an existing way of working. Kanban is an evolutionary method for improving a team's agility, and works well when the team already has an existing way of working in place.",
+		"Advice" : "Reading the Agile Manifesto is a wonderful place to start. Scrum is a popular Agile software development framework that is an excellent strategy when establishing a new team if there isn't currently a way of working in place. Kanban is an evolutionary method for enhancing a team's agility that works effectively when the team already has a working system in place.",
 		"Links" : [
 			{
 				"Type" : "Website",
@@ -12,39 +12,39 @@
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Explaining Agile - Martin Fowler and Neal Ford at USI (0:43)",
+				"Text" : "Agile explanation : Neal Ford and Martin Fowler at USI (0:43)",
 				"Href" : "https://www.youtube.com/watch?v=GE6lbPLEAzc"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "The Systems Thinking Approach to Introducing Kanban - David Anderson (1:31)",
+				"Text" : "David Anderson's : Systems Thinking Approach to Kanban Deployment (1:31)",
 				"Href" : "https://vimeo.com/46272041"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "The Scrum Guide by Ken Schwaber and Jeff Sutherland",
+				"Text" : "Agile : A successful methodology. Mike Cohn's Scrum for Software Development",
 				"Href" : "http://www.scrumguides.org/index.html"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Succeeding with Agile: Software Development Using Scrum by Mike Cohn",
+				"Text" : "Kanban : David Anderson's article \"Successful Evolutionary Change for Your Technology Business.\"",
 				"Href" : "https://www.amazon.com/Succeeding-Agile-Software-Development-Using/dp/0321579364",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Kanban: Successful Evolutionary Change for Your Technology Business by David Anderson",
+				"Text" : "Ken Schwaber and Jeff Sutherland's Scrum Guide",
 				"Href" : "https://www.amazon.com/Kanban-Successful-Evolutionary-Technology-Business/dp/0984521402",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"Collaboration" : {
-		"Advice" : "Consider whether you have the tools necessary to enable effective communication within and outside of the team. Also think about how effective the team's interpersonal habits are for enabling a fast, low-friction and precise exchange of ideas and emotions.",
+		"Advice" : "Consider whether you have the tools needed to facilitate good communication both within and outside of the team. Consider how effective the team's interpersonal behaviours are in facilitating a quick, low-friction, and exact exchange of ideas and emotions.",
 		"Links" : [
 			{
 				"Type" : "Blog",
-				"Text" : "Cultivate Communities of Practice by Mike Cohn",
+				"Text" : "Mike Cohn's article Cultivate Communities of Practice",
 				"Href" : "https://www.mountaingoatsoftware.com/blog/cultivate-communities-of-practice"
 			},
 			{
@@ -59,25 +59,25 @@
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Software For Your Head by Jim and Michele McCarthy",
+				"Text" : "Jim and Michele McCarthy's Software For Your Head",
 				"Href" : "https://liveingreatness.com/software-for-your-head-book/"
 			}
 		]
 	},
 	"Automation" : {
-		"Advice" : "Automation is critical to shortening the lead time for software delivery. If quality and speed are to be transformed, automation is essential. Automation enables environments to be provisioned and configured identically every time. Automation enables application code to be built, tested, delivered, provisioned and configured easily. Automation also enables environments to be monitored and incidents (including security threats) to be responded to based upon a set of rules. Automation drives consistency, enforces quality, removes wastage and delivers speed; it is the technical backbone to any DevOps implementation.",
+		"Advice" : "Automation is crucial for reducing the time it takes to deliver software. Automation is required if quality and speed are to be transformed. Automation allows environments to be provisioned and configured exactly the same way every time. Automation makes it simple to build, test, deliver, provision, and configure application code. Automation also allows for the monitoring of environments and the response to occurrences (including security concerns) based on a set of rules. Automation ensures consistency, enforces quality, eliminates waste, and increases speed; it is the technical foundation of any DevOps operation",
 		
-		"ReadMore" : "The general rule of thumb is to automate anything that you’re doing more than once, however there are diminishing returns that will be experienced and it produces a new code base to maintain. Surprisingly, adopting a clear and well communicated automation strategy is not necessarily key to successful adoption and buy-in from engineering teams, although it is certainly valuable to have one. The question is more about timing than anything else, but in certain areas (e.g. Infrastructure as Code) automation is one of those things that generally builds pace organically. Start small with engineering led experimentation as, generally, engineers see the value in automation. We suggest that you: <p />- Encourage automation of the day to day (something that may save 20 minutes but is done several times per week, as once the benefits are seen, automating things becomes addictive) <p />- Catalyse discussions of automation tooling choices via communities of interest, these will eventually generate standards in coding, practices, processes and principles <p />- Continuously review automation as part of retrospectives <p />- Communicate automation successes and failures (both can be learned from!) <p />- Follow good engineering practices: for example, maintain automation code in a version controlled code repository <p />When making the case for automation, it is not necessarily about the cost saving (almost certainly not based upon the status quo). For example, the business case for test automation based upon the current release frequency may not make sense, but if that release frequency shifts to once per day it would do. It’s not just about release frequency either, automation significantly reduces wastage within the system, measuring the mean time to recovery (MTTR) and the number of defects in production will display the benefit of automation here. Ultimately the benefits of automation are speed and consistency.",
+		"ReadMore" : "The general rule of thumb is to automate anything that you perform more than once; nevertheless, there will be diminishing returns and a new code base to manage. Surprisingly, while having a clear and well-communicated automation strategy is beneficial, it is not required for successful adoption and buy-in from technical teams. The question is more about timing than anything else, however automation is one of those things that often gains pace organically in specific areas (e.g., Infrastructure as Code). Begin small with engineering-led experimentation because engineers, in general, perceive the value in automation. We recommend that you:- Encourage day-to-day automation (something that may save 20 minutes but is done several times per week, as once the benefits are seen, automating things becomes addictive). - Use communities of interest to catalyse debates around automation tooling choices, which will eventually result in code, practises, processes, and principles standards.- Review automation on a regular basis as part of retrospectives.- Share automation achievements and mistakes (both can be used to learn!) - Adhere to proper engineering practises, such as storing automation code in a version controlled code repository. When arguing for automation, it is not always about cost savings (almost certainly not based upon the status quo). For example, a business case for test automation based on the current release frequency may not make sense, but it might if the release frequency was reduced to once per day.It's not just about the frequency of releases; automation also dramatically decreases wastage within the system; evaluating the mean time to recovery (MTTR) and the number of defects in production will demonstrate the advantage of automation here. Finally, the advantages of automation include speed and uniformity.",
 		
 		"Links" : [
 			{
 				"Type" : "Book",
-				"Text" : "Get started with Red Hat Ansible Tower",
+				"Text" : "Begin with Red Hat Ansible Tower",
 				"Href" : "https://www.ansible.com/resources/ebooks/get-started-with-red-hat-ansible-tower"
 			},
 			{
 				"Type" : "Article",
-				"Text" : "Various Ansible Whitepapers",
+				"Text" : "Various Ansible Whitepapers are available",
 				"Href" : "https://www.ansible.com/resources/whitepapers"
 			},
 			{
@@ -87,18 +87,18 @@
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "Putting The Dev Into DevOps: Why Your Developers Should Write Terraform Too by Luke Kysow",
+				"Text" : "Luke Kysow's Putting the Dev in DevOps: Why Your Developers Should Write Terraform, too",
 				"Href" : "https://medium.com/runatlantis/putting-the-dev-into-devops-why-your-developers-should-write-terraform-too-d3c079dfc6a8"
 			},
 			{
 				"Type" : "Article",
-				"Text" : "Data Center Automation (Atos Whitepaper)",
+				"Text" : "Automation of Data Centers (Atos Whitepaper)",
 				"Href" : "https://atos.net/wp-content/uploads/2018/09/atos-wp-datacenter-automation.pdf"
 			}
 		]
 	},
 	"Environments" : {
-		"Advice" : "Automation of the provisioning, configuration and management of environments (such as development, QA and Production) is a cornerstone of DevOps adoption. There are many tools and methodologies that can be adopted to automate the various layers involved: automated monitoring, patching, build and configuration management, as well as simple provisioning. The use of abstraction techniques, such as containerisation, is being widely adopted to simplify such automation.",
+		"Advice" : "Automation of environment provisioning, configuration, and administration (such as development, QA, and production) is a key component of DevOps adoption. Many tools and approaches can be used to automate the many layers involved, including automated monitoring, patching, build and configuration management, and easy provisioning. To simplify such automation, abstraction techniques such as containerisation are extensively used.",
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -107,7 +107,7 @@
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "10 automation tools your DevOps team can not live without Matt Shealy",
+				"Text" : "Matt Shealy's list of the top ten automation tools for your DevOps team",
 				"Href" : "https://bigdata-madesimple.com/10-automation-tools-your-devops-team-cant-live-without/"
 			},
 			{
@@ -117,7 +117,7 @@
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "10 Devops Tools For Infrastructure Automation And Monitoring",
+				"Text" : "10 Infrastructure Automation And Monitoring Devops Tools",
 				"Href" : "https://devopscube.com/devops-tools-for-infrastructure-automation/"
 			},
 			{
@@ -127,7 +127,7 @@
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "8 CI/CD Best Practices for Your DevOps Journey by Kristin Baskett",
+				"Text" : "Kristin Baskett's 8 CI/CD Best Practices for Your DevOps Journey",
 				"Href" : "https://www.cloudbees.com/blog/8-cicd-best-practices-your-devops-journey"
 			},
 			{
@@ -138,44 +138,44 @@
 		]
 	},
 	"Testing" : {
-		"Advice" : "Automated testing enables tests to be run quickly and frequently. It enables new features to be added with a high degree of confidence that existing functionality will not be broken. As such it is a key enabler for delivering software frequently in smaller increments.",
+		"Advice" : "Tests may be conducted rapidly and frequently with automated testing. It allows for the addition of new features while maintaining a high level of assurance that existing functionality will not be broken. As such, it is a critical enabler for releasing software in smaller increments more frequently.",
 		"Links" : [
 			{
 				"Type" : "Blog",
-				"Text" : "TestPyramid by Martin Fowler",
+				"Text" : "Martin Fowler's TestPyramid",
 				"Href" : "https://martinfowler.com/bliki/TestPyramid.html"
 			},
 			{
 				"Type" : "Article",
-				"Text" : "The Practical Test Pyramid by Martin Fowler",
+				"Text" : "Martin Fowler's Practical Test Pyramid",
 				"Href" : "https://martinfowler.com/articles/practical-test-pyramid.html"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Automation Testing Tutorial for Beginners (0:07)",
+				"Text" : "Beginner's Automation Testing Tutorial (0:07)",
 				"Href" : "https://www.youtube.com/watch?v=RbSlW8jZFe8"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Netflix Automation Talks - Test Automation at Scale (1:16)",
+				"Text" : "Test Automation at Scale - Netflix Automation Talks (1:16)",
 				"Href" : "https://www.youtube.com/watch?v=FrBN94gUn_I"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Test-Driven Development: A Practical Guide by David Astels",
+				"Text" : "David Astels' Test-Driven Development: A Practical Guide",
 				"Href" : "https://www.amazon.com/Test-Driven-Development-Practical-Guide/dp/0131016490",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Working Effectively with Legacy Code by Michael Feathers",
+				"Text" : "Michael Feathers' Working Effectively with Legacy Code",
 				"Href" : "https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"Static Analysis" : {
-		"Advice" : "Static code analysis is the analysis of software without executing the compiled program. In most cases the analysis is performed on a version of the source code but, in other cases, object code is used. Static analysis helps to improve code quality by reporting possible code bugs, code smells, memory leaks, software metrics and security vulnerabilities.",
+		"Advice" : "The analysis of software without running the generated programme is known as static code analysis. The analysis is often performed on a version of the source code, although in other circumstances, object code is used. Static analysis aids in the improvement of code quality by identifying potential bugs, code smells, memory leaks, software metrics, and security vulnerabilities.",
 		"Links" : [
 			{
 				"Type" : "Video",
@@ -200,7 +200,7 @@
 		]
 	},
 	"Architecture and Design": {
-		"Advice" : "Navigating the many and various options for optimising architecture for DevOps can be bewildering! It is important to bear in mind that there are no \"right\" answers. The agility and functionality of Public Cloud environments make them ideal for building DevOps focused architectures and a good starting point for reading matter is the Cloud Providers’ own guides. Beyond that there are various books, videos and vendor tool documentation that are useful sources of information.",
+		"Advice" : "It can be difficult to navigate the many and varied alternatives for optimising architecture for DevOps! It is critical to remember that there are no 'correct' solutions. The agility and functionality of Public Cloud environments make them excellent for designing DevOps-focused designs, and the Cloud Providers' own manuals are a fantastic starting point for reading material. Aside from that, there are a variety of books, videos, and vendor tool documentation that can be helpful",
 		"Links" : [
 			{
 				"Type" : "Book",
@@ -269,36 +269,36 @@
 		]
 	},
 	"DevOps Practices" : {
-		"Advice" : "There are a number of technical practices that are core to DevOps: Continuous Integration, Continuous Deployment/Delivery, Test Driven Development, Refactoring, and Code Review. The resources here are good overviews. For more in depth results see the detailed report for DevOps Practices.",
+		"Advice" : "DevOps relies on a number of technological processes, including Continuous Integration, Continuous Deployment/Delivery, Test Driven Development, Refactoring, and Code Review. The resources provided here provide good overviews. See the detailed report on DevOps Practices for more information.",
 		"Links" : [
 			{
 				"Type" : "Article",
-				"Text" : "Enterprise DevOps: Building a Service Oriented Organisation (Atos Whitepaper)",
+				"Text" : "Building a Service-Oriented Organization with Enterprise DevOps (Atos Whitepaper)",
 				"Href" : "https://atos.net/wp-content/uploads/2017/01/DevOps_Building_a_Service_Oriented_Organization-White-Paper-web-FINAL-281116.pdf"
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "Continuous Integration by Martin Fowler",
+				"Text" : "Martin Fowler's Continuous Integrationr",
 				"Href" : "https://martinfowler.com/articles/continuousIntegration.html"
 			},
 			{
 				"Type" : "Website",
-				"Text" : "Continuous Delivery",
+				"Text" : "Continuous Supply",
 				"Href" : "https://continuousdelivery.com/"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Continuous Delivery - Jez Humble (0:46)",
+				"Text" : "Jez Humble's Continuous Delivery (0:46)",
 				"Href" : "https://www.youtube.com/watch?v=skLJuksCRTw"
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "TestDrivenDevelopment by Martin Fowler",
+				"Text" : "Martin Fowler's TestDrivenDevelopment",
 				"Href" : "https://martinfowler.com/bliki/TestDrivenDevelopment.html"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "The Art of Agile Development: Test-Driven Development by James Shore",
+				"Text" : "James Shore's The Art of Agile Development: Test-Driven Development",
 				"Href" : "https://www.jamesshore.com/Agile-Book/test_driven_development.html"
 			},
 			{
@@ -308,115 +308,115 @@
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "Code Reviews: Just Do It by Jeff Atwood",
+				"Text" : "Jeff Atwood Code Reviews: Just Do It",
 				"Href" : "https://blog.codinghorror.com/code-reviews-just-do-it/"
 			}
 		]
 	},
 	"CI" : {
-		"Advice" : "Continuous Integration (CI) is the practice of merging changes back to the main branch (trunk) as often as possible, even several times a day. The developer's changes are validated by triggering a build and running automated tests against the build. By doing so, you avoid the integration hell that usually happens when people wait until \"release day\" to merge their changes into the trunk. Continuous Integration puts a great emphasis on test automation to check that the application is not broken whenever new commits are integrated into the main branch.",
+		"Advice" : "Continuous Integration (CI) is the process of merging changes back into the main branch (trunk) as frequently as possible, even many times per day. The developer's modifications are validated by starting a build and executing automated tests on it. You avoid the integration hell that occurs when users wait until \"release day\" to merge their changes into the trunk. Continuous Integration places a high value on test automation to ensure that the application is not broken when new commits are integrated into the main branch.",
 		"Links" : [
 			{
 				"Type" : "Article",
-				"Text" : "Continuous Integration by Martin Fowler",
+				"Text" : "Martin Fowler's Continuous Integration",
 				"Href" : "https://martinfowler.com/articles/continuousIntegration.html"
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "FeatureBranch by Martin Fowler",
+				"Text" : "Martin Fowler's FeatureBranch",
 				"Href" : "https://martinfowler.com/bliki/FeatureBranch.html"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Continuous Integration: Improving Software Quality and Reducing Risk by Paul M. Duvall",
+				"Text" : "Paul M. Duvall's Continuous Integration: Improving Software Quality and Reducing Risk",
 				"Href" : "https://www.amazon.com/Continuous-Integration-Improving-Software-Reducing/dp/0321336380",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"CD" : {
-		"Advice" : "Continuous Delivery (CD) as an extension of Continuous Integration and is an approach where, after each build, the software is automatically delivered into a production-like quality assurance environment on which further automated testing is completed. Furthermore, the build can then be easily released into production if desired. Continuous Deployment goes one step further than Continuous Delivery. With this practice, every change that passes all stages of your delivery pipeline is automatically released into production. There is no human intervention, and only a failed test will prevent a new change being deployed.",
+		"Advice" : "Continuous Delivery (CD) is an extension of Continuous Integration in which the software is automatically released into a production-like quality assurance environment after each build and further automated testing is done. Furthermore, if desired, the build can be readily released into production. Continuous Deployment is a step above Continuous Delivery. Every update that makes it through all stages of your delivery pipeline is automatically released into production with this method. There is no human intervention, and only a failing test prevents the deployment of a new update.",
 		"Links" : [
 			{
 				"Type" : "Article",
-				"Text" : "Continuous integration vs. continuous delivery vs. continuous deployment by Sten Pittet",
+				"Text" : "CI/CD Introduction (0:04)",
 				"Href" : "https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment"
 			},
 			{
 				"Type" : "Website",
-				"Text" : "Continuous Delivery",
+				"Text" : "Sten Pittet discusses the differences between continuous integration, continuous delivery, and continuous deployment",
 				"Href" : "https://continuousdelivery.com/"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "GitHub Professional Guides: Continuous Integration Continuous Delivery (0:06)",
+				"Text" : "Professional Guides on GitHub: Integrating Continuously Continuous Supply (0:06)",
 				"Href" : "https://www.youtube.com/watch?v=xSv_m3KhUO8"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "CI/CD Introduction (0:04)",
+				"Text" : "Jez Humble's Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation",
 				"Href" : "https://www.youtube.com/watch?v=AlrImm1T8Wg"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation by Jez Humble",
+				"Text" : "Continuous Delivery",
 				"Href" : "https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"TDD" : {
-		"Advice" : "Test Driven Development (TDD) is an approach to developing software where automated tests are written before production code. This ensures that up-to-date automated tests are always maintained and makes it easier and less risky to make changes to software.",
+		"Advice" : "Test Driven Development (TDD) is a software development methodology in which automated tests are written before production code. This ensures that up-to-date automated tests are continually maintained and makes software updates easier and less hazardous.",
 		"Links" : [
 			{
 				"Type" : "Blog",
-				"Text" : "TestDrivenDevelopment by Martin Fowler",
+				"Text" : "Martin Fowler's TestDrivenDevelopment",
 				"Href" : "https://martinfowler.com/bliki/TestDrivenDevelopment.html"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Test-Driven Development: A Practical Guide by David Astels",
+				"Text" : "David Astels' Test-Driven Development: A Practical Guide",
 				"Href" : "https://www.amazon.com/gp/product/0131016490/",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Refactoring: Improving the Design of Existing Code by Martin Fowler",
+				"Text" : "Martin Fowler's Refactoring: Improving the Design of Existing Code",
 				"Href" : "https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599/",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"Code Review" : {
-		"Advice" : "Code reviews are a very effective way of increasing software quality and also spreading knowledge accross the team.",
+		"Advice" : "Code reviews are a very efficient method of improving software quality while also disseminating information within the team.",
 		"Links" : [
 			{
 				"Type" : "Blog",
-				"Text" : "Code Reviews: Just Do It by Jeff Atwood",
+				"Text" : "Jeff Atwood's Code Reviews: Just Do It",
 				"Href" : "https://blog.codinghorror.com/code-reviews-just-do-it/"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Code Complete: A Practical Handbook of Software Construction by Steve McConnell",
+				"Text" : "Steve McConnell's Code Complete: A Practical Handbook of Software Construction",
 				"Href" : "https://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Clean Code: A Handbook of Agile Software Craftsmanship by Robert C. Martin",
+				"Text" : "Robert C. Martin's Clean Code: A Handbook of Agile Software Craftsmanship",
 				"Href" : "https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/",
 				"Paid" : "Yes"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt",
+				"Text" : "Andrew Hunt's The Pragmatic Programmer: From Journeyman to Master",
 				"Href" : "https://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"Refactoring" : {
-		"Advice" : "Refactoring reduces technical debt and is the technical practice of improving the internal quality of code without changing its external functionality. As technical debt builds up, the speed at which new functionality can be released is drastically reduced, thus it is vital that technical debt is actively managed. Refactoring is also an integral part of Test Driven Development (TDD).",
+		"Advice" : "Refactoring is a technological process that improves the internal quality of code without compromising its external functionality. As technical debt accumulates, the rate at which new functionality can be deployed slows dramatically, making it critical that technical debt be continuously managed. Refactoring is an essential component of Test Driven Development (TDD).",
 		"Links" : [
 			{
 				"Type" : "Website",
@@ -425,43 +425,43 @@
 			},
 			{
 				"Type" : "Website",
-				"Text" : "What is refactoring?",
+				"Text" : "What basically is refactoring?",
 				"Href" : "https://www.agilealliance.org/glossary/refactoring"
 			},
 			{
 				"Type" : "Website",
-				"Text" : "Online catalog of refactorings by Martin Fowler",
+				"Text" : "Martin Fowler's online refactoring collection",
 				"Href" : "https://refactoring.com/catalog/"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Code Refactoring: Learn Code Smells And Level Up Your Game! - Sandi Metz (0:36)",
+				"Text" : "Learn Code Smells And Level Up Your Game With Code Refactoring! Sandi Metz (0:36)",
 				"Href" : "https://www.youtube.com/watch?v=D4auWwMsEnY"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Workflows of Refactoring - Martin Fowler (0:27)",
+				"Text" : "Refactoring Workflows - Martin Fowler (0:27)",
 				"Href" : "https://www.youtube.com/watch?v=vqEg37e4Mkw"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Refactoring: Improving the Design of Existing Code by Martin Fowler",
+				"Text" : "Martin Fowler's Refactoring: Improving the Design of Existing Code",
 				"Href" : "https://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Signature/dp/0134757599/",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"Org Structure, Culture and Incentives" : {
-		"Advice" : "Org Structure, Culture and Incentives are critical for DevOps success within an organisation, but they are also the hardest/most disruptive elements to change and get right.",
+		"Advice" : "Organizational Structure, Culture, and Incentives are crucial for DevOps success, but they are also the most difficult/disruptive factors to modify and get right.",
 		"Links" : [
 			{
 				"Type" : "Blog",
-				"Text" : "The Benefits of Feature Teams by Mike Cohn",
+				"Text" : "Mike Cohn discusses the advantages of feature teams",
 				"Href" : "https://www.mountaingoatsoftware.com/blog/the-benefits-of-feature-teams"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Spotify Engineering Culture",
+				"Text" : "Culture of Engineering at Spotify",
 				"Href" : "https://vimeo.com/85490944"
 			},
 			{
@@ -476,15 +476,15 @@
 			},
 			{
 				"Type" : "Video",
-				"Text" : "DevOpsChat: \"Giving a Damn\" interview with Pawel Brodzinski (00:34)",
+				"Text" : "DevOpsChat: Interview with Pawel Brodzinski on \"Giving a Damn\" (00:34)",
 				"Href" : "https://www.youtube.com/watch?v=tY4_OTj46h8"
 			}
 		]
 	},
 	"Organisation Structure" : {
-		"Advice" : "For successful DevOps adoption, the organisation needs to be structured into teams that are both cross-functional and autonomous.",
+		"Advice" : "For successful DevOps adoption, the organisation must be organised into cross-functional and independent teams.",
 		
-		"ReadMore" : "Many organisational structures are characterised by and aligned to functions (specialisms) rather than the outcomes that are needed for the business. The issue with function-based organisational structures is that they tend to create a lot of handovers between teams; things get thrown over the fence for the next team to deal with, generally by complaining about the quality from the previous team and using up all the time of the team after them. This doesn't support the development of a collaborative culture. Improve the organisational structure and both quality and flow will improve.",
+		"ReadMore" : "Many organisational structures are defined and linked by functions (specialisations) rather than the outputs required by the business. The problem with function-based organisational structures is that they create a lot of handovers between teams; items get thrown over the fence for the next team to deal with, usually by whining about the prior team's quality and taking up all of the time of the team following them. This is not conducive to the establishment of a collaborative culture. If the organisational structure is improved, both the quality and the flow will improve.",
 		
 		"Links" : [
 			{
@@ -494,31 +494,31 @@
 			},
 			{
 				"Type" : "Article",
-				"Text" : "Enterprise DevOps: Building a Service Oriented Organisation (Atos Whitepaper)",
+				"Text" : "Building a Service-Oriented Organization with Enterprise DevOps (Atos Whitepaper)",
 				"Href" : "https://atos.net/wp-content/uploads/2017/01/DevOps_Building_a_Service_Oriented_Organization-White-Paper-web-FINAL-281116.pdf"
 			},
 			{
 				"Type" : "Video",
-				"Text" : "Spotify Engineering Culture",
+				"Text" : "Engineering Culture at Spotify",
 				"Href" : "https://vimeo.com/85490944"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "Migrating to Cloud-Native Application Architectures by Matt Stine",
+				"Text" : "Matt Stine's article, Migrating to Cloud-Native Application Architectures",
 				"Href" : "https://download3.vmware.com/vmworld/2015/downloads/oreilly-cloud-native-archx.pdf"
 			},
 			{
 				"Type" : "Book",
-				"Text" : "The Phoenix Project by Gene Kim, Kevin Behr and George Spafford",
+				"Text" : "Gene Kim, Kevin Behr, and George Spafford's The Phoenix Project",
 				"Href" : "https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262592",
 				"Paid" : "Yes"
 			}
 		]
 	},
 	"Culture" : {
-		"Advice" : "Driving the right culture within an organisation is critical for successful DevOps adoption. It is the \"X  Factor\" for any organisation. An organisation may have the most incredible tool chain in the world, but if they do not collaborate, continuously improve, step out of their traditional/functionally based tribes, ensure clear connection between the desired strategic objectives and the software features being built, engage and empower people at all levels, connect everyone to the mission and embrace experimentation, then the full benefits of DevOps will never be truly realised.",
+		"Advice" : "It is vital for effective DevOps adoption to foster the correct culture inside an organisation. It is the \"X Factor\" for any company. An organisation can have the best tool chain in the world, but if it does not collaborate, continuously improve, step outside of its traditional/functionally based tribes, ensure a clear connection between the desired strategic objectives and the software features being built, engage and empower people at all levels, connect everyone to the mission, and embrace experimentation, the full benefits of DevOps will never be realised.",
 		
-		"ReadMore" : "<p />Culture change is hard and, as a result, many choose to focus on the tooling aspects of DevOps. Culture change is like a virus in the way it spreads: when first introduced to an organisation it will be attacked by \"company antibodies\" (e.g. \"we don’t do it like that here\"). Thus, taking the analogy further, the virus must be strong and continuously fed until it is dominant within the system. <p /> There are many culture change models/approaches and one size does not fit all. Success factors include true business engagement and alignment (DevOps is not \"an IT problem\"), recognising that the \"We is stronger than the I\", a meritocratic, free speaking, open organisation (command and control does not yield transformational results), and change through demonstration/delivery (not only is demonstrating tangible benefits the most effective way to convince doubters, it is backed through many change models; e.g. using the Satir Model for change, demonstrating a new approach is the \"transforming idea\" and repeating it is the \"practice and integration\" that takes an organisation to a new status quo for performance).",
+		"ReadMore" : "Because culture change is difficult, many people prefer to concentrate on the tooling components of DevOps. In the way it spreads, culture change is similar to a virus: when first introduced to an organization, it will be attacked by \"business antibodies\" (e.g., \"we don't do it like that here\"). Continuing the analogy, the virus must be strong and constantly fed until it is dominant in the system. There are numerous culture transformation models and methodologies available, and one size does not fit all. True business engagement and alignment (DevOps is not an \"IT problem\"), recognizing that the \"We is stronger than the I,\" a meritocratic, free-speech, open organization (command and control do not yield transformational results), and change through demonstration/delivery are all success factors (not only is demonstrating tangible benefits the most effective way to convince doubters, it is backed through many change models; e.g. using the Satir Model for change, demonstrating a new approach is the \"transforming idea\" and repeating it is the \"practice and integration\" that takes an organization to a new status quo for performance).",
 		"Links" : [
 			{
 				"Type" : "Book",
@@ -546,10 +546,11 @@
 		]
 	},
 	"Incentivisation" : {
-		"Advice" : "For DevOps adoption personal incentives are less effective at driving the desired behaviors than team incentives. Within a DevOps approach, one wishes to drive ownership of the product/outcomes and the understanding that those successfully adopting DevOps will \"live and die\" as a team; this aligns earnings with collaboration, not competition.",
+		"Advice" : "Personal incentives are less successful at encouraging desired behaviours in DevOps adoption than team incentives. Within a DevOps strategy, one desires to create product/outcome ownership as well as the concept that those who successfully implement DevOps will \"live and die\" as a team; this aligns profits with collaboration rather than competition.",
 		
-		"ReadMore" : "<p />Incentives are just about the most controversial topic for any organisation, and there are many possible approaches. Making significant changes to incentive structures, especially in large organisations, can be hugely disruptive, controversial and, in some cases, require agreement from unions/employee forums, thus there is no perfect implementation we can recommend. Our advice, however, is to take a fresh look at the existing incentives within the organisation and ensure that they are aligned as much as possible to the outcomes that the organisation is looking to achieve through DevOps. <p />Some organisations have removed all personal incentives in favour of team only incentives, others are constrained within a traditional incentive framework/structure, but can make simple changes like giving weight to actions that support others within the team. What is to be avoided is giving a bonus to the person that turns up at 3:30am and gets a system back up again, rather than rewarding the person who identifies and fixes the issue at its root cause so it doesn’t fall over again; this is an alarmingly common flaw in may incentive structures. <p />Question whether incentives can be used effectively to drive not only DevOps adoption, but tighter unity and collaboration within the DevOps teams themselves. Failing to do so frequently results in team members sticking to their tribes, e.g. \"I'm a Dev, I'm not doing Ops work/going on call.\"",
-	"Links" : [
+		"ReadMore" : "Incentives are one of the most contentious topics in any organisation, and there are numerous techniques that may be used. Significant changes to incentive structures, particularly in large organisations, can be extremely disruptive, contentious, and, in certain situations, necessitate consent from unions/employee forums; consequently, there is no perfect implementation we can propose.Our advise, on the other hand, is to take a new look at the existing incentives inside the organisation and ensure that they are as closely matched to the results that the organisation hopes to achieve through DevOps as feasible.Some organisations have eliminated all personal incentives in favour of team-only incentives, while others are restricted by a standard incentive framework/structure but can make minor changes such as assigning weight to acts that benefit others on the team.Giving a bonus to the person who arrives at 3:30 a.m. and gets a system back up and running, rather than rewarding the person who finds and fixes the issue at its root cause so it doesn't topple over again, is a dangerously prevalent error in many incentive structures. Incentives may be used effectively to foster not only DevOps adoption, but also greater unity and collaboration within DevOps teams. Failure to do so frequently leads to team members adhering to their tribes, such as \"I'm a Dev, I'm not performing Ops work/going on call.\"",
+		
+		"Links" : [
 			{
 				"Type" : "Website",
 				"Text" : "Management 3.0",
@@ -557,7 +558,7 @@
 			},
 			{
 				"Type" : "Video",
-				"Text" : "DevOpsChat: \"Giving a Damn\" interview with Pawel Brodzinski (00:34)",
+				"Text" : " DevOpsChat: \"Giving a Damn\" interview with Pawel Brodzinski (00:34)",
 				"Href" : "https://www.youtube.com/watch?v=tY4_OTj46h8"
 			},
 {
@@ -579,7 +580,7 @@
 		]
 	},
 	"Standardisation" : {
-		"Advice" : "The arguments for standardisation versus flexibility are complex and multi-dimensional, as are the related decision points of utilising SaaS vs PaaS vs IaaS. In truth, there is no \"correct\" answer and the overall benefit of standardisation will vary. The key to success is to gain a good understanding of the relative merits and disadvantages, which can then be applied to any particular situation. Below are some excellent guides to help develop greater understanding of this.",
+		"Advice" : "The debates around standardisation versus flexibility are complex and multi-faceted, as are the related decision points of using SaaS vs PaaS vs IaaS. In reality, there is no \"right\" answer, and the total value of standardisation varies. The key to success is to develop a thorough awareness of the relative benefits and drawbacks of each option, which can then be applied to any given situation. Here are some wonderful resources to assist you gain a better knowledge of this.",
 		"Links" : [
 			{
 				"Type" : "Blog",
@@ -588,7 +589,7 @@
 			},
 			{
 				"Type" : "Blog",
-				"Text" : "DevOps Survey Results: The Case for Standardized Continuous Delivery Tools by Heidi Gilmore",
+				"Text" : "DevOps Survey Results: The Case for Standardized Continuous Delivery Tools by Heidi Gilmore.",
 				"Href" : "https://www.cloudbees.com/blog/devops-survey-results-case-standardized-continuous-delivery-tools"
 			},
 			{

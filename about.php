@@ -40,8 +40,8 @@
 
 			<section class="jumbotron text-center bg-dark border-primary border">
 				<div class="container">
-					<h1 class="jumbotron-heading">Improve Your DevOps Capability</h1>
-					<p class="lead">This online DevOps Maturity Assessment questionnaire will help you understand your current strengths and weaknesses and then recommend resources that can support you in taking the next steps on your DevOps journey.</p>
+					<h1 class="jumbotron-heading">Enhance Your DevOps Capabilities</h1>
+					<p class="lead">This free DevOps Maturity Assessment questionnaire will help you identify your existing strengths and shortcomings before recommending resources to assist you take the next steps in your DevOps journey.</p>
 					<p>
 						<a href="<?='section-' . SectionNameToURLName($survey->sections[0]['SectionName'])?>" class="btn btn-primary">Start the Questionnaire</a>
 						<a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank" class="btn btn-secondary">Fork us on GitHub</a>
@@ -57,9 +57,9 @@
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="far fa-chart-bar fa-stack-1x"></i>
 					</span>
-					<h2>Understand Where You Are</h2>
-					<p class="text-justify">Our set of carefully designed questions across 7 different areas will help you quickly establish your current level of DevOps maturity.</p>
-					<p class="text-justify">You can view the results online as well as downloading them in CSV format for more detailed analysis.</p>
+					<h2>Determine Your Current Level</h2>
+					<p class="text-justify">Our carefully crafted collection of questions covering seven key areas will assist you in swiftly determining your current level of DevOps maturity.</p>
+					<p class="text-justify">You may examine the findings online or download them in CSV file for more in-depth study.</p>
 				</div><!-- /.col-lg-4 -->
 			
 				<div class="col-lg-4">
@@ -67,8 +67,8 @@
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-shoe-prints fa-stack-1x"></i>
 					</span>
-					<h2>Identify Your Next Steps</h2>
-					<p class="text-justify">For each area we have identified a range of free or commercially available books, videos, blog posts, white papers and websites that will help you take the next steps on your DevOps journey.</p>
+					<h2>Determine Your Next Milestone</h2>
+					<p class="text-justify">We've found a variety of free or commercially available books, videos, blog articles, white papers, and websites to assist you take the next milestones in your DevOps journey.</p>
 				</div><!-- /.col-lg-4 -->
 		  
 
@@ -77,8 +77,8 @@
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-lock-open fa-stack-1x"></i>
 					</span>
-					<h2>Free and Open Source</h2>
-					<p class="text-justify">This tool is made available under the MIT License: you are free to use, adapt and redistribute it, both for commercial and non-commercial use. There is no obligation to share your changes, although we always appreciate feedback! Why not <a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank">fork us on GitHub</a>?</p>
+					<h2>Open Source Tools</h2>
+					<p class="text-justify">You are allowed to use, adapt and redistribute the tools for business and non-commercial purposes. There is no requirement for you to share your changes, but we always value input! Why don't you <a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank">fork us on GitHub</a>?</p>
 		
 				</div><!-- /.col-lg-4 -->
 				
@@ -86,7 +86,7 @@
 		  
 			<div class="row">
 				<div class="col-lg-12">
-					<p align="center"><em>We do not harvest your data and we will not share your results with anyone else.</em></p>
+					<p text-align="center"><em>We do not collect your personal information and will not disclose your results to anybody else.</em></p>
 				</div>
 			</div>
 		  

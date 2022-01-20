@@ -8,7 +8,7 @@
 ?> 
  
 	<div class="container-fluid">
-	<form action="test.php" method="POST">
+<form action="test.php" method="POST">
   
 <?php
 
