@@ -175,8 +175,8 @@
 		<script src="js/jquery-3.3.1.min.js"></script>		
 		<style>
 			.sectionPadding{
-  padding: 60px 0;
-}
+				padding: 60px 0;
+			}
 
 .bannerText{
   display:flex;
@@ -308,9 +308,8 @@ span.iconStyle {
   margin-top: 20px;
 }
 
-h2.sectionHeading {
+h2.sectionHeading{
   text-align: center;
-  margin-bottom: 50px;
   font-size: 28px;
 }
 
@@ -363,23 +362,121 @@ a.btnStyle2:hover{
   transition: 0.3s all;
   border-color: #2a55a3;
 }
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
 		
-			@media (max-width: 355px) { 
-				#bigwrapper { padding-top: 100px; }
+			@media (max-width: 520px) { 
+				.navMenuStyle a{
+					font-size:16px !important;
+				}
+				span.iconStyle{
+					font-size: 16px !important;
+				}
+				.serviceDetails {
+    				padding: 15px;
+				}
+				.headerText h1 {
+    				font-size: 22px;
+				}
+				.headerText p {
+    				font-size: 15px;
+				}
+				a.btnStyle1 {
+					padding: 8px;
+					font-size: 14px;
+				}
+				a.btnStyle2 {
+					padding: 8px;
+					font-size: 14px;
+				}
+				.serviceDetails h3 {
+    				font-size: 18px;
+				}
+				h2.sectionHeading{
+					font-size: 20px;
+				}
+				.bannerHeader h2 {
+    				font-size: 22px;
+				}
+				.bannerHeader{
+					background-size: cover !important;
+				}
+				h5.bg-questionHolder{
+					font-size: 17px !important;
+					padding: 10px;
+				}
+				.smBorderHide{
+					border: 0px !important;
+				}
+				.card-footer.bg-questionHolder {
+					padding: 10px;
+					font-size: 12px;
+				}
+				#resultDetails p{
+					font-size: 15px !important;
+				}
+				#resultDetails a.card-link{
+					font-size: 15px !important;
+				}
+				#resultDetails .fa, .fas, .far, .fal, .fab{
+					font-size: 13px !important;
+				}
 			}
-		
+
+			@media (max-width: 768px){
+				.dropdown-menu.show {
+					box-shadow: none !important;
+    				border: 1px solid #00000070;
+    				padding: 0px !important;
+				}
+				.navMenuStyle .dropdown-menu a {
+					padding: 6px 4px;
+					border-top: 1px dashed #00000047;
+				}
+				.dropdown-divider{
+					display: none !important;
+				}
+				.navMenuStyle .navbar-dark .navbar-toggler-icon{
+				filter: invert(1);
+				background-size: 22px;
+			}
+			button.navbar-toggler {
+    			border: 1px solid #00000061 !important;
+    			padding: 1px 3px;
+				outline: none !important;
+			}
+			.navCollpase {
+				position: absolute;
+				top: 100%;
+				background: white;
+				width: 100%;
+				right: 0px;
+				border: 1px solid #0000001f;
+				padding: 0px;
+			}
+			.navCollpase ul li {
+				padding: 4px 8px;
+				
+			}
+			.navCollpase ul li+li{
+				border-top: 1px dashed #0000002e;
+			}
+			}
+			
 		</style>
 		
 	</head>
 	
 	<body id="bigwrapper">
 <header class="navMenuStyle">
-	<nav class="navbar navbar-expand-md">
+	<nav class="navbar navbar-dark navbar-expand-lg">
 		<a href="about" class="navbar-brand">DevOps Maturity Assessment</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
+		<div class="collapse navbar-collapse navCollpase" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
 				<?php RenderNavBarButtons($navBar); ?>
 			</ul>

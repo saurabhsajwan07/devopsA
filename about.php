@@ -29,7 +29,7 @@
          <h2 class="sectionHeading">About DevOps Maturity Assessment</h2>
       </div>
       <!-- Three columns of text below the jumbotron -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 mt-4">
          <div class="serviceDetails">
             <span class="iconStyle">
             <i class="far fa-chart-bar"></i>
@@ -40,7 +40,7 @@
          </div>
       </div>
       <!-- /.col-lg-4 -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 mt-4">
          <div class="serviceDetails">
             <span class="iconStyle">
             <i class="fas fas fa-shoe-prints"></i>
@@ -50,7 +50,7 @@
          </div>
       </div>
       <!-- /.col-lg-4 -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 mt-4">
          <div class="serviceDetails">
             <span class="iconStyle">
             <i class="fas fa-lock-open "></i>

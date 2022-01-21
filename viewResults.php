@@ -86,7 +86,7 @@
       <h2>Result Section</h3>
    </div>
 </section> 
-<section class="sectionPadding">	
+<section class="sectionPadding" id="resultDetails">	
 	<div class="container-fluid">
 		
 		<div class="row">
@@ -99,7 +99,7 @@
 		
 		<div class="row">
 			<div class="col-xl-9 col-lg-11  pt-0 pb-4 rounded text-left mx-auto">
-				<div class="bg-light rounded-bottom p-2 p-sm-4 border-primary border ml-sm-2 ml-xs-2 mb-2 mr-sm-2 mr-xs-2">
+				<div class="smBorderHide bg-light rounded-bottom p-2 p-sm-4 border-primary border ml-sm-2 ml-xs-2 mb-2 mr-sm-2 mr-xs-2">
 						<div class="row">
 							<div class="col-lg-12">
 								<?=$preAmble?>
