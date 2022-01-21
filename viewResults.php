@@ -81,7 +81,12 @@
 	}
 
 ?>
-	
+<section class="bannerHeader">
+   <div class="container">
+      <h2>Result Section</h3>
+   </div>
+</section> 
+<section class="sectionPadding">	
 	<div class="container-fluid">
 		
 		<div class="row">
@@ -109,8 +114,8 @@
 						<div class="row">
 							<div class="col-lg-12 mt-1">
 								<div class="card-deck">
-									<div class="card border-primary">
-										<h5 class="card-header text-center text-white bg-primary">
+									<div class="card">
+										<h5 class="card-header text-center text-white bg-questionHolder">
 											<?=array_keys($resultsSummary)[0]?>
 										</h5>
 										<div class="card-body p-1">
@@ -118,18 +123,18 @@
 											<?php RenderAdvice(array_keys($resultsSummary)[0], true) ?>
 											</div>
 										</div>
-										<div class="card-footer text-center text-white bg-primary">
+										<div class="card-footer text-center text-white bg-questionHolder">
 											Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
 										</div>
 									</div>
-									<div class="card border-primary">
-										<h5 class="card-header text-center text-white bg-primary">
+									<div class="card">
+										<h5 class="card-header text-center text-white bg-questionHolder">
 											<?=array_keys($resultsSummary)[1]?>
 										</h5>
 										<div class="card-body p-1">
 											<?php RenderAdvice(array_keys($resultsSummary)[1], true) ?>
 										</div>
-										<div class="card-footer text-center text-white bg-primary">
+										<div class="card-footer text-center text-white bg-questionHolder">
 											Your score: <?=$resultsSummary[array_keys($resultsSummary)[1]]['ScorePercentage']?>%
 										</div>
 									</div>
@@ -139,14 +144,14 @@
 					
 						<div class="row">
 							<div class="col-lg-12 mt-sm-4">
-								<div class="card border-primary">
-									<h5 class="card-header text-center text-white bg-primary">
+								<div class="card">
+									<h5 class="card-header text-center text-white bg-questionHolder">
 										<?=array_keys($resultsSummary)[2]?>
 									</h5>
 									<div class="card-body p-1">
 										<?php RenderAdvice(array_keys($resultsSummary)[2], true) ?>
 									</div>
-									<div class="card-footer text-center text-white bg-primary">
+									<div class="card-footer text-center text-white bg-questionHolder">
 										Your score: <?=$resultsSummary[array_keys($resultsSummary)[2]]['ScorePercentage']?>%
 									</div>
 								</div>
@@ -163,6 +168,7 @@
 		</div>
 		
 	</div>
+</div>
 	
 <script>
 	

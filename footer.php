@@ -10,4 +10,15 @@
     
   </body>
 </html>
-    
+<script>
+  $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+         
+            if (scroll >= 3) {
+                $(".navMenuStyle").addClass("navFixedMenu");
+            }
+            else{
+                $(".navMenuStyle").removeClass("navFixedMenu");
+            }
+         }); 
+</script>

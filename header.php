@@ -174,15 +174,195 @@
 		<script src="./js/chart.bundle.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>		
 		<style>
-			#bigwrapper {
-				background-image: Url('backdrop.jpg');
-				background-repeat: no-repeat;
-				background-position: top center;
-				background-attachment: fixed;
-				backgroun-size: cover;
-				background-color: RGB(2, 2, 1);
-				padding-top: 70px;
-			}
+			.sectionPadding{
+  padding: 60px 0;
+}
+
+.bannerText{
+  display:flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(60deg,rgb(0 0 0 / 65%) 0%,rgb(0 0 0 / 55%) 100%),url(banner.jpg);
+}
+
+.bannerHeader {
+  padding: 150px 0 50px;
+  position: relative;
+  background-position: top left !important;
+  background: url(og-image.jpg);
+}
+
+a.dropdown-item:active{
+  background-color: #2a55a3 !important;
+}
+
+.bg-questionHolder{
+  background-color: #2a55a3 !important;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.questionHoldertxt{
+  color: black !important;
+  margin-left: 10px;
+  text-align: center;
+}
+
+button.submitBtnStyle {
+  cursor: pointer;
+  padding: 8px 18px;
+  font-size: 15px;
+  background: #2a55a3;
+  color: white;
+  border-radius: 4px;
+  border: 0px;
+  margin: 0px 10px;
+  transition: 0.4s all;
+  outline: none !important;
+  border: 1px solid #2a55a3;
+}
+
+button.submitBtnStyle:hover{
+  border: 1px solid #2a55a3;
+  color:#2a55a3;
+  background-color: white;
+  transition: 0.4s all;
+}
+
+.navMenuStyle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffffe0;
+  padding: 0px;
+  transition: margin-top 0.4s ease-in-out;
+  border-bottom: 1px solid #00000029;
+  z-index: 99;
+}
+
+.bannerHeader h2 {
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+}
+
+.navFixedMenu{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  animation: smoothScroll 0.8s forwards;
+}
+
+.headerText h1{
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: white;
+}
+
+.headerText p{
+  font-size: 19px;
+  line-height: 1.6;
+  color: #f5f5f5;
+  margin-bottom: 1.8rem;
+}
+
+.navMenuStyle .dropdown-menu{
+  padding-top: 4px;
+  border-top: 2px solid #2a55a3;
+}
+
+.navMenuStyle a{
+  color: black !important;
+  padding: 4px 15px;
+}
+
+a{
+  text-decoration: none !important;
+}
+/* services css */
+.serviceDetails {
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(51 51 51 / 21%);
+}
+
+.serviceDetails:hover{
+  color: #2a55a3;
+  transition: all 0.2s;  
+  box-shadow: 1px 2px 8px -2px rgb(0 0 0 / 30%);
+}
+
+span.iconStyle {
+  font-size: 1.5rem;
+  color: #2a55a3;
+}
+
+.serviceDetails h3{
+  font-size: 24px;
+  margin-bottom: 14px;
+  margin-top: 20px;
+}
+
+h2.sectionHeading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 28px;
+}
+
+.serviceDetails p{
+  color: #747474;
+  font-size: 15px;
+  margin: 0px;
+  line-height: 1.6;
+}
+/* footer */
+.footerText{
+  padding: 13px 10px;
+  background: #2a55a3;
+}
+
+.footerText p{
+  font-size: 15px;
+  color: white;
+  margin: 0px;
+  text-align: center;
+}
+
+a.btnStyle1 {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  background: #2a55a3;
+  color: white;
+  border-radius: 4px;
+}
+
+a.btnStyle2 {
+  cursor: pointer;
+  padding: 9px;
+  font-size: 16px;
+  border:1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+a.btnStyle1:hover{
+  background-color: white;
+  color: #2a55a3;
+  transition: 0.3s all;
+}
+
+a.btnStyle2:hover{
+  background-color: #2a55a3;
+  color: white;
+  transition: 0.3s all;
+  border-color: #2a55a3;
+}
 		
 			@media (max-width: 355px) { 
 				#bigwrapper { padding-top: 100px; }
@@ -193,8 +373,8 @@
 	</head>
 	
 	<body id="bigwrapper">
-
-	<nav class="navbar navbar-dark bg-primary fixed-top navbar-expand-md form-group" ">
+<header class="navMenuStyle">
+	<nav class="navbar navbar-expand-md">
 		<a href="about" class="navbar-brand">DevOps Maturity Assessment</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
@@ -205,4 +385,4 @@
 			</ul>
 		</div>
 	</nav>	
-	
+</header>	
