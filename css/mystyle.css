@@ -17,7 +17,12 @@
 }
 
 a.dropdown-item:active {
-	background-color: #2a55a3 !important;
+	background: #2a55a3 !important;
+    color: white !important;
+}
+
+.txtColor{
+	color: #2a55a3 !important;
 }
 
 .bg-questionHolder {
