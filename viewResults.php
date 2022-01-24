@@ -4,7 +4,7 @@
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
 	
 	$isForm = FALSE;
-	$activePage = 'Results';
+	$activePage = 'Current State Report';
 	
 	// Determine whether we are showing detailed results for one section
 	$sectionURL = '';
@@ -54,6 +54,7 @@
 	$labels = substr($labels, 0, -1) . ']';
 	$data = substr($data, 0, -1) . ']';
 	
+	
 	// Now sort by highest to lowest score
 	uasort( $resultsSummary, function($a, $b) { return $b['ScorePercentage'] - $a['ScorePercentage']; } );
 	
@@ -81,13 +82,15 @@
 	}
 
 ?>
+
 <section class="bannerHeader">
    <div class="container">
-      <h2>Result Section</h3>
+      <h2>Current State Report</h3>
    </div>
 </section> 
-<section class="sectionPadding" id="resultDetails">	
-	<div class="container-fluid">
+	
+	<section class="sectionPadding" id="resultDetails">	
+		<div class="container-fluid">
 		
 		<div class="row">
 			<div class="col-xl-9 col-lg-11 pb-0 rounded text-center text-light mx-auto">
@@ -96,10 +99,10 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="row">
 			<div class="col-xl-9 col-lg-11  pt-0 pb-4 rounded text-left mx-auto">
-				<div class="smBorderHide bg-light rounded-bottom p-2 p-sm-4 border-primary border ml-sm-2 ml-xs-2 mb-2 mr-sm-2 mr-xs-2">
+				<div class="smBorderHide bg-light rounded-bottom p-2 p-sm-4 border ml-sm-2 ml-xs-2 mb-2 mr-sm-2 mr-xs-2">
 						<div class="row">
 							<div class="col-lg-12">
 								<?=$preAmble?>
@@ -110,125 +113,31 @@
 							// Now sort by lowest to highest score
 							uasort( $resultsSummary, function($a, $b) { return $a['ScorePercentage'] - $b['ScorePercentage']; } );
 						?>
-				
-						<div class="row">
-							<div class="col-lg-12 mt-1">
-								<div class="card-deck">
-									<div class="card">
-										<h5 class="card-header text-center text-white bg-questionHolder">
-											<?=array_keys($resultsSummary)[0]?>
-										</h5>
-										<div class="card-body p-1">
-											<div>
-											<?php RenderAdvice(array_keys($resultsSummary)[0], true) ?>
-											</div>
-										</div>
-										<div class="card-footer text-center text-white bg-questionHolder">
-											Your score: <?=$resultsSummary[array_keys($resultsSummary)[0]]['ScorePercentage']?>%
-										</div>
-									</div>
-									<div class="card">
-										<h5 class="card-header text-center text-white bg-questionHolder">
-											<?=array_keys($resultsSummary)[1]?>
-										</h5>
-										<div class="card-body p-1">
-											<?php RenderAdvice(array_keys($resultsSummary)[1], true) ?>
-										</div>
-										<div class="card-footer text-center text-white bg-questionHolder">
-											Your score: <?=$resultsSummary[array_keys($resultsSummary)[1]]['ScorePercentage']?>%
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+
 
 						<div class="row">
-							<div class="col-lg-12 mt-sm-4">
-								<div class="card">
-									<h5 class="card-header text-center text-white bg-questionHolder">
-										<?=array_keys($resultsSummary)[2]?>
-									</h5>
-									<div class="card-body p-1">
-										<?php RenderAdvice(array_keys($resultsSummary)[2], true) ?>
-									</div>
-									<div class="card-footer text-center text-white bg-questionHolder">
-										Your score: <?=$resultsSummary[array_keys($resultsSummary)[2]]['ScorePercentage']?>%
-									</div>
-								</div>
-							</div>
-						
-						
-						</div>
-
-						<div class="row">
-							<div class="col-lg-12 mt-4">
-								<div class="card-deck">
-									
-									<div class="card">
-										<h5 class="card-header text-center text-white bg-questionHolder">
-											<?=array_keys($resultsSummary)[3]?>
-										</h5>
-										<div class="card-body p-1">
-											<?php RenderAdvice(array_keys($resultsSummary)[3], true) ?>
-										</div>
-										<div class="card-footer text-center text-white bg-questionHolder">
-											Your score: <?=$resultsSummary[array_keys($resultsSummary)[3]]['ScorePercentage']?>%
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="row">
+						<?php foreach($resultsSummary as $index=>$val) { ?>	
 							<div class="col-lg-12 mt-4">
 								<div class="card-deck">
 									<div class="card">
 										<h5 class="card-header text-center text-white bg-questionHolder">
-											<?=array_keys($resultsSummary)[4]?>
+											<?=$index?>
 										</h5>
 										<div class="card-body p-1">
 											<div>
-											<?php RenderAdvice(array_keys($resultsSummary)[4], true) ?>
+											<?php RenderAdvice($index, true) ?>
 											</div>
 										</div>
 										<div class="card-footer text-center text-white bg-questionHolder">
-											Your score: <?=$resultsSummary[array_keys($resultsSummary)[4]]['ScorePercentage']?>%
+											Your score: <?=$val['ScorePercentage']?>%
 										</div>
-									</div>
-									<div class="card">
-										<h5 class="card-header text-center text-white bg-questionHolder">
-											<?=array_keys($resultsSummary)[5]?>
-										</h5>
-										<div class="card-body p-1">
-											<?php RenderAdvice(array_keys($resultsSummary)[5], true) ?>
-										</div>
-										<div class="card-footer text-center text-white bg-questionHolder">
-											Your score: <?=$resultsSummary[array_keys($resultsSummary)[5]]['ScorePercentage']?>%
-										</div>
-									</div>
+									</div>															
 								</div>
 							</div>
+							<?php } ?>
 						</div>
-				
-						<div class="row">
-							<div class="col-lg-12 mt-4">
-								<div class="card-deck">
-									<div class="card">
-										<h5 class="card-header text-center text-white bg-questionHolder">
-											<?=array_keys($resultsSummary)[6]?>
-										</h5>
-										<div class="card-body p-1">
-											<div>
-											<?php RenderAdvice(array_keys($resultsSummary)[6], true) ?>
-											</div>
-										</div>
-										<div class="card-footer text-center text-white bg-questionHolder">
-											Your score: <?=$resultsSummary[array_keys($resultsSummary)[6]]['ScorePercentage']?>%
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+
+
 					
 				</div>
 			</div>

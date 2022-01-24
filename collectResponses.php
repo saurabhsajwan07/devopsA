@@ -44,7 +44,7 @@
 
 <section class="sectionPadding">
 <div class="container-fluid">
-   <form action="test.php" method="POST">
+   <form action="test.php" method="POST" id="submitFormBtn">
 	<div class="row">
 		<div class="col-lg-11 col-md-10 m-2 pb-4 rounded text-light mx-auto">
 			<h3 class="questionHoldertxt"><?=$survey->sections[$sectionIndex]['SectionName']?></h3>
@@ -78,7 +78,7 @@
 		</div>
 		<!-- Show results button if we are on the final section -->
 		<?php if ($nextSection == '') { ?>
-			<button type="submit" class="submitBtnStyle" onclick="$('form').attr('action', 'results');">View Results</button>
+			<button type="submit" class="submitBtnStyle showResultOnclick">View Results</button>
 		<?php } ?>
 	</div>
 	</div>

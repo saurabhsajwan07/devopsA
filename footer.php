@@ -7,11 +7,24 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
 		
-    
   </body>
 </html>
 <script>
-  $(window).scroll(function() {    
+      
+    $(".showResultOnclick").click(function(){
+        $('form').attr('action', 'results');
+        //$('.afterresultshow').addClass('blockEle');
+        $('.afterresultshow').css("display", "block");
+    });   
+    
+
+    // $('#submitFormBtn').submit(function() {
+    //     e.preventDefault();
+    //     $('form').attr('action', 'results');
+    //     $('.afterresultshow').css("display", "block");
+    // });
+
+    $(window).scroll(function() {    
             var scroll = $(window).scrollTop();
          
             if (scroll >= 3) {
@@ -20,5 +33,6 @@
             else{
                 $(".navMenuStyle").removeClass("navFixedMenu");
             }
-         }); 
+        });
+
 </script>

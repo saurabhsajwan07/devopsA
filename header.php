@@ -11,13 +11,14 @@
 		'Questionaire' => array ('Url' => 'section-' . SectionNameToURLName($survey->sections[0]['SectionName']), 'Type' => 'Standard'),
 		'Sections' => array ('Type' => 'Dropdown' ),
 				// Sub-menus for each page are added here (see below)
-		'Results' => array ('Url' => 'results', 'Type' => 'Standard' ),
+		'Current State Report' => array ('Url' => 'results', 'Type' => 'Standard' ),
 		'Detailed Reports' => array ('Type' => 'Dropdown', 'Items' => array (
 				'Download CSV' => array('Url' => 'devops-maturity-csv.php', 'Type' => 'Standard'),
 				'Divider1' => array('Type' =>'Divider') ) ),
 				// Sub-menus for detailed reports are added here, see below
-		'Resources' => array ('Url' => 'resources', 'Type' => 'Standard' ),
-		'About' => array ('Url' => 'about', 'Type' => 'Standard' ) );
+		'Recommdation' => array ('Url' => 'resources', 'Type' => 'Standard' ),
+		'About' => array ('Url' => 'about', 'Type' => 'Standard' ) 
+	);
 	
 	// Add the sub-menus for each page of the survey, and also for the detailed reports
 	foreach ($survey->sections as $section)
@@ -99,12 +100,18 @@
 		// Check if this is the button for the current page, and if so style it accordingly
 		global $activePage;
 		$active = '';
+		$hideclass = '';
+		$showresult='';
 		if ($activePage == $buttonText)
 		{
 			$active = ' active';
 		}
+		if(in_array($buttonText,['Recommdation','Current State Report'])){
+			$hideclass="display:none";
+			$showresult='afterresultshow';
+		}
 		?>
-		<li>
+		<li style="<?php echo $hideclass; ?>" class="<?php echo isset($showresult)?$showresult:'' ?>">
 			<a href="#" class="nav-link<?=$active?>" onclick="<?=OnClickHandler($url)?>"><?=$buttonText?></a>
 		</li>
 		<?php
@@ -115,12 +122,20 @@
 		// Check if this is the button for the current page, and if so style it accordingly
 		global $activePage;
 		$active = '';
+		$hideclass = '';
+		$showresult='';
 		if ($activePage == $buttonText)
 		{
 			$active = ' active';
 		}
+
+		if(in_array($buttonText,['Detailed Reports'])){
+			$hideclass="display:none";
+			$showresult='afterresultshow';
+		}
+
 		?>
-		<li class="navbar-item dropdown">
+		<li class="navbar-item dropdown <?php echo isset($showresult)?$showresult:'' ?>"  style="<?php echo $hideclass; ?>">
 			<a href="#" class="nav-link dropdown-toggle<?=$active?>" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<?=$buttonText?>
 			</a>
@@ -182,7 +197,7 @@
 	
 	<body id="bigwrapper">
 <header class="navMenuStyle">
-	<nav class="navbar navbar-dark navbar-expand-lg">
+	<nav class="navbar navbar-dark navbar-expand-xl">
 		<a href="about" class="navbar-brand">DevOps Maturity Assessment</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 			<span class="navbar-toggler-icon"></span>
@@ -193,4 +208,4 @@
 			</ul>
 		</div>
 	</nav>	
-</header>	
+</header>

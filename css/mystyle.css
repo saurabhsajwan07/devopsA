@@ -103,6 +103,8 @@ button.submitBtnStyle:hover {
 .navMenuStyle .dropdown-menu {
 	padding-top: 4px;
 	border-top: 2px solid #2a55a3;
+    right: 0px !important;
+    left: unset !important;
 }
 
 .navMenuStyle a {
@@ -198,6 +200,10 @@ a.btnStyle2:hover {
 	border-color: #2a55a3;
 }
 
+.blockEle{
+	display: block !important;
+}
+
 @media (max-width: 520px) {
 	.navMenuStyle a {
 		font-size: 16px !important;
@@ -260,7 +266,7 @@ a.btnStyle2:hover {
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
 	.dropdown-menu.show {
 		box-shadow: none !important;
 		border: 1px solid #00000070;

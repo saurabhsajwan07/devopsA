@@ -7,6 +7,7 @@
    
    require 'header.php';	
    ?>
+   
 <section class="bannerText">
    <div class="container">
    <div class="row">
@@ -16,7 +17,6 @@
             <p>This free DevOps Maturity Assessment questionnaire will help you identify your existing strengths and shortcomings before recommending resources to assist you take the next steps in your DevOps journey.</p>
             <p>
                <a href="<?='section-' . SectionNameToURLName($survey->sections[0]['SectionName'])?>" class="btnStyle1 mr-3">Start the Questionnaire</a>
-               <a href="https://github.com/atosorigin/DevOpsMaturityAssessment" target="_blank" class="btnStyle2">Fork us on GitHub</a>
             </p>
          </div>
       </div>

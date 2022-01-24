@@ -3,16 +3,16 @@
     * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
    
    $isForm = FALSE;
-   $activePage = 'Resources';
+   $activePage = 'Recommdation';
    
    require 'header.php';
    require 'renderAdvice.php';
    
-   ?>
+?>
 
 <section class="bannerHeader">
    <div class="container">
-      <h2>Resources</h3>
+      <h2>Recommdation</h3>
    </div>
 </section> 
 
