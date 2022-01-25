@@ -204,6 +204,10 @@ a.btnStyle2:hover {
 	display: block !important;
 }
 
+#resultDetails .resultViewHide{
+	display: none;
+}
+
 @media (max-width: 520px) {
 	.navMenuStyle a {
 		font-size: 16px !important;

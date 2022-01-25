@@ -18,7 +18,7 @@
 		{
 			if ( $survey->sections[$survey->SectionNameToIndex($sectionName)]['HasSubCategories'] )
 			{
-				$detailedReportLink = '</p><p>See also <a href="results-' . SectionNameToURLName($sectionName) . '">detailed report for ' .
+				$detailedReportLink = '</p><p class="pl-3 mb-3">See also <a href="results-' . SectionNameToURLName($sectionName) . '">detailed report for ' .
 										$sectionName . '</a>.';
 			}
 		}
@@ -31,13 +31,12 @@
 			$readMoreAdvice = str_replace("'", '&lsquo;', $readMoreAdvice);
 			$sectionNameNoSpace = str_replace(' ', '', $sectionName);
 			$readMoreJS = "onclick=\"$('#$sectionNameNoSpace').html('$readMoreAdvice');\"";
-			$readMoreLink = '</p><p id="' . $sectionNameNoSpace . '"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
+			$readMoreLink = '</p><p id="' . $sectionNameNoSpace . '" class="pl-3 mb-3"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
 		}
 		
 		?>
-		
-		<ul class="list-group list-group-flush">
-			<li class="list-group-item"><p><?=$advice[$sectionName]['Advice'] . $readMoreLink . $detailedReportLink?></p></li>
+		<p class="p-3 mb-1"><?=$advice[$sectionName]['Advice'] . $readMoreLink . $detailedReportLink?></p>
+		<ul class="list-group list-group-flush resultViewHide">
 			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { 
 				$icon = '';
 				switch ($link['Type']) {
