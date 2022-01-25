@@ -5,8 +5,8 @@
  
  */
 
-session_name('devopsassessment');
-session_start();
+//session_name('devopsassessment');
+//session_start();
 
 Class Survey
 {

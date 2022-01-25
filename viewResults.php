@@ -9,6 +9,7 @@
 	// Determine whether we are showing detailed results for one section
 	$sectionURL = '';
 	$uri = $_SERVER["REQUEST_URI"];
+	
 	if ( strpos($uri, "results-") )
 	{
 		$sectionURL = explode("results-", $uri)[1];
@@ -17,6 +18,10 @@
 	
 	require 'header.php';
 	require 'renderAdvice.php';
+
+	if(isset($_POST['viewResult']) && $_POST['viewResult']!=''){
+		 $_SESSION["showMenuStatus"] = true;
+   }
 
 	// Get either the overall results, or the results for the chosen sub-categories
 	if ( $sectionURL == '' )
@@ -215,7 +220,7 @@
 	);
 
 </script>
-	
+
 <?php
 	
 	require 'footer.php';

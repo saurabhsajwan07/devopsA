@@ -1,7 +1,8 @@
 <?php 
 	/* Copyright 2018 Atos SE and Worldline
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
-
+	 session_name('devopsassessment');
+	session_start();
 	require 'survey.php'; 
 	
 	$survey = new Survey;
@@ -187,7 +188,6 @@
 
 		<!-- Mystyle Sheet -->
 		<link rel="stylesheet" href="css/mystyle.css">
-
 		<title>DevOps Maturity Assessment</title>
 		<script src="./js/chart.bundle.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>		
