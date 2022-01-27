@@ -208,7 +208,9 @@
    			}
    	}
    );
-   $('.resultViewHide').remove();
+
+	$('.resultViewHide, .hideFromPdf').remove();
+
 </script>
 <?php
    require 'footer.php';

@@ -18,7 +18,7 @@
 		{
 			if ( $survey->sections[$survey->SectionNameToIndex($sectionName)]['HasSubCategories'] )
 			{
-				$detailedReportLink = '</p><p class="pl-3 mb-3">See also <a href="results-' . SectionNameToURLName($sectionName) . '">detailed report for ' .
+				$detailedReportLink = '</p><p class="pl-3 mb-3 hideFromPdf">See also <a href="results-' . SectionNameToURLName($sectionName) . '">detailed report for ' .
 										$sectionName . '</a>.';
 			}
 		}
@@ -31,7 +31,7 @@
 			$readMoreAdvice = str_replace("'", '&lsquo;', $readMoreAdvice);
 			$sectionNameNoSpace = str_replace(' ', '', $sectionName);
 			$readMoreJS = "onclick=\"$('#$sectionNameNoSpace').html('$readMoreAdvice');\"";
-			$readMoreLink = '</p><p id="' . $sectionNameNoSpace . '" class="pl-3 mb-3"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
+			$readMoreLink = '</p><p id="' . $sectionNameNoSpace . '" class="pl-3 mb-3 hideFromPdf"><a href="#/" ' . $readMoreJS . '>Show more advice >></a>';
 		}
 		
 		?>
