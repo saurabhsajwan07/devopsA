@@ -17,7 +17,7 @@
 				'Download CSV' => array('Url' => 'devops-maturity-csv.php', 'Type' => 'Standard'),
 				'Divider1' => array('Type' =>'Divider') ) ),
 				// Sub-menus for detailed reports are added here, see below
-		'Recommdation' => array ('Url' => 'resources', 'Type' => 'Standard' ),
+		'Recommendation' => array ('Url' => 'resources', 'Type' => 'Standard' ),
 		'About' => array ('Url' => 'about', 'Type' => 'Standard' ) 
 	);
 	
@@ -107,7 +107,7 @@
 		{
 			$active = ' active';
 		}
-		if(in_array($buttonText,['Recommdation','Current State Report'])){
+		if(in_array($buttonText,['Recommendation','Current State Report'])){
 			$hideclass="display:none";
 			$showresult='afterresultshow';
 		}
@@ -147,7 +147,6 @@
 							<a class="dropdown-item" href="#" onclick="<?=OnClickHandler($dropdownItem['Url'])?>"><?=$index?></a>
 							<?php break;
 						case 'Divider': ?>
-							<div class="dropdown-divider"></div>
 							<?php break;
 					}
 				}?>

@@ -3,7 +3,7 @@
     * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
    
    $isForm = FALSE;
-   $activePage = 'Recommdation';
+   $activePage = 'Recommendation';
    
    require 'header.php';
    require 'renderAdvice.php';
@@ -12,7 +12,7 @@
 
 <section class="bannerHeader">
    <div class="container">
-      <h2>Recommdation</h3>
+      <h2>Recommendation</h3>
    </div>
 </section> 
 

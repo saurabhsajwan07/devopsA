@@ -17,7 +17,7 @@ handlers:
   secure: always
   redirect_http_response_code: 301
 
-- url: /recommdation
+- url: /Recommendation
   script: viewResources.php
   secure: always
   redirect_http_response_code: 301
