@@ -492,7 +492,6 @@
 				"QuestionText" : "Are the superior stakeholders liberal and support the DevOps approach?",
 				"Answers" : [
 					{"Answer" : "Yes, we rarely have issues with business cases or bureaucratic processes", "Score" : 2},
-					{"Answer" : "Are the superior stakeholders liberal and support the DevOps approach?", "Score" : 1},
 					{"Answer" : "No", "Score" : 0}
 					]
 			},

@@ -36,8 +36,9 @@
 		
 		?>
 		<p class="p-3 mb-1"><?=$advice[$sectionName]['Advice'] . $readMoreLink . $detailedReportLink?></p>
-		<ul class="list-group list-group-flush resultViewHide">
-			<?php foreach ( $advice[$sectionName]['Links'] as $link ) { 
+			<ul class="list-group list-group-flush resultViewHide">
+		<?php
+			foreach ( $advice[$sectionName]['Links'] as $link ) { 
 				$icon = '';
 				switch ($link['Type']) {
 					case 'Video':
