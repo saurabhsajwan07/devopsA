@@ -1,8 +1,6 @@
 <?php 
 	/* Copyright 2018 Atos SE and Worldline
 	 * Licensed under MIT (https://github.com/atosorigin/DevOpsMaturityAssessment/blob/master/LICENSE) */
-     //print_r($_SESSION);die;
-     //echo $_SESSION['showMenuStatus'];die;
 ?>
 
 		<!-- Popper.js first, then Bootstrap JS -->
